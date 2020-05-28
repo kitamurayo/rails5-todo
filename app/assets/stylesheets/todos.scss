@@ -1,0 +1,24 @@
+// Place all the styles related to the todos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.box {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: .50rem;
+    box-shadow:3px 3px rgba(0,0,0,0.4);
+    background-color: #eee;
+    background-color: rgba(52, 152,  219,.20);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(52, 152, 219,.24);
+}
+.line-break {
+    word-wrap: break-word;
+}
+.center-align {
+  text-align: center;
+}
+.new-btn {
+  margin: 10px;
+}

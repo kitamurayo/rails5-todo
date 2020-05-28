@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="center-align new-btn">
+      <h1>Todo</h1>
+      <hr>
+      <%= link_to 'New Todo', new_todo_path, class: "btn btn-success" %>
+    </div>
+  </div>
+  <div class="row">
+  <% @todos.each do |todo| %>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="box">
+        <h3 class="card-title"><%= todo.title %></h3>
+        <p class="card-text line-break"><%= todo.description %></p>
+        <%= link_to 'Edit', edit_todo_path(todo), class: "btn btn-primary" %>
+        <%= link_to 'Destroy', todo, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
